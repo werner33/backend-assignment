@@ -45,13 +45,7 @@ Each response from the `/records` endpoint will have the following:
 - **open**: an array of objects with the disposition, "open"
 - **closedPrimaryCount**: an integer count of all the objects with disposition, "closed"
 
-The `/records` endpoint accepts the following options, sent as query string parameters on the request URL:
-
-- **limit**: The number of items to be returned
-- **offset**: The index of the first item to be returned
-- **color[]**: Which color to be included in the result set. May be included multiple times, once for each color. If omitted, all colors will be returned.
-
-An basic request URL might look like:
+A basic request URL would look like this:
 
 ```
 /records
@@ -59,7 +53,7 @@ An basic request URL might look like:
 
 ## Task 2 - Handle Query String
 
-1. Get data from the `/records` endpoint, accepting the `page` parameter. Process pages of 10 items at a time. 
+1. Get data from the `/records` endpoint, accepting the `page` parameter. Process pages of 10 records at a time. 
 
 Examples: 
 ```/records?page=4```
