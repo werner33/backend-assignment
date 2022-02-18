@@ -19,6 +19,8 @@ You have access to 500 'records' from the file at `data/colors.json`. Each recor
 - **color**: One of `"red"`, `"brown"`, `"blue"`, `"yellow"`, or `"green"`
 - **disposition**: Either `"open"` or `"closed"`
 
+Additionally, you should add a property called `isPrimary` with a boolean, true if the color is primary, false if not. 
+
 When calling the `/records.js` path, complete the API endpoint so that it returns a JSON response in the following format:
 
 ```json
@@ -78,7 +80,7 @@ As a combined example, to fetch the 2nd page of red and brown items from the API
 
 ## Additional notes
 
-- Don't add any additional libraries or edit any files other than `routes/records.js`. You may add an addional file with helper functions if you would like.
+- Don't add any additional libraries or edit any files other than `routes/records.js`. You may add an additional file with helper functions if you would like.
 
 - We've provided a suite of unit tests. Your solution should pass all tests.
 
